@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/button_cit_student_service"
+            android:src="@drawable/handbookstudentservice"
+            android:onClick="viewPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/button_cit_sport"
+            android:src="@drawable/citsport"
+            android:onClick="viewPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_cit_student_service"
+            android:layout_toEndOf="@+id/button_cit_student_service"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save pdf "
+            android:id="@+id/button_download_student_service"
+            android:onClick="onClick"
+            android:layout_below="@+id/button_cit_student_service"
+            android:layout_alignLeft="@+id/button_cit_student_service"
+            android:layout_alignStart="@+id/button_cit_student_service"
+            android:layout_alignRight="@+id/button_cit_student_service"
+            android:layout_alignEnd="@+id/button_cit_student_service"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save pdf"
+            android:id="@+id/button_download_student_sport"
+            android:onClick="onClick2"
+            android:layout_gravity="center_vertical"
+            android:layout_above="@+id/button2"
+            android:layout_alignLeft="@+id/button_cit_sport"
+            android:layout_alignStart="@+id/button_cit_sport"
+            android:layout_alignRight="@+id/button_cit_sport"
+            android:layout_alignEnd="@+id/button_cit_sport"></Button>
+
+        <Button
+            android:text="View Downloads"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showDownload"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/button_download_student_service"
+            android:layout_centerHorizontal="true"></Button>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

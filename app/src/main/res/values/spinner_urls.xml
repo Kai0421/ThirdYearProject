@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_url_list">
+        <item>DCOM3 Semester 2</item>
+        <item>DNET3 Semester 1</item>
+        <item>ADCA2 Semester 1</item>
+        <item>COM1 Semester 1</item>
+        <item>DNET3 Semester 2</item>
+        <item>CA.CM1 Semester 1</item>
+        <item>PS.IP1 Semester 2</item>
+        <item>BI.BMS1 Semester 2</item>
+        <item>MB.DME1 Semester 1</item>
+    </string-array>
+</resources>

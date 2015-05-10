@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="row_backgroud">#000000</color>
+    <color name="column_background">#FFFFFF</color>
+    <color name="cit">#cb1b4d</color>
+    <color name="opaque_red">#f00</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="blue">#0080ff</color>
+    <color name="zlta">#fa8c01</color>
+    <color name="pok">#FFFFFF</color>
+
+
+</resources>

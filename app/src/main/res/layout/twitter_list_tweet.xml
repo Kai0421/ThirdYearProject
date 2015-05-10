@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cit_twitter_profile_image_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/cit_header" />
+
+    <TextView
+        android:id="@+id/cit_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cit_twitter_profile_image_iv"
+        android:layout_alignTop="@+id/cit_twitter_profile_image_iv"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/cit_twitter_profile_image_iv"
+        android:layout_toRightOf="@+id/cit_twitter_profile_image_iv"
+        android:text="Name will go here"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cit_date_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cit_twitter_profile_image_iv"
+        android:layout_toEndOf="@+id/cit_twitter_profile_image_iv"
+        android:layout_toRightOf="@+id/cit_twitter_profile_image_iv"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff4b4b4b" />
+
+    <TextView
+        android:id="@+id/tweet_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cit_date_time_tv"
+        android:layout_toEndOf="@+id/cit_twitter_profile_image_iv"
+        android:layout_toRightOf="@+id/cit_twitter_profile_image_iv"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+
+        android:id="@+id/tweet_embedded_image_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tweet_message"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/cit_twitter_profile_image_iv"
+        android:layout_toRightOf="@+id/cit_twitter_profile_image_iv"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/retweet_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tweet_embedded_image_iv"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/cit_twitter_profile_image_iv"
+        android:layout_toRightOf="@+id/cit_twitter_profile_image_iv"
+        android:paddingBottom="20dp"
+        android:src="@drawable/retweet_count" />
+
+    <TextView
+        android:id="@+id/retweet_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/retweet_icon_iv"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/retweet_icon_iv"
+        android:layout_toRightOf="@+id/retweet_icon_iv"
+        android:paddingBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/favourited_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/retweet_count_tv"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/retweet_count_tv"
+        android:layout_toRightOf="@+id/retweet_count_tv"
+        android:paddingBottom="20dp"
+        android:src="@drawable/favourite_count" />
+
+    <TextView
+        android:id="@+id/favourited_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favourited_icon_iv"
+        android:layout_toEndOf="@+id/favourited_icon_iv"
+        android:layout_toRightOf="@+id/favourited_icon_iv"
+        android:paddingBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/screen_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cit_name_tv"
+        android:layout_alignTop="@+id/cit_name_tv"
+        android:layout_toEndOf="@+id/cit_name_tv"
+        android:layout_toRightOf="@+id/cit_name_tv"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#D31245" />
+
+</RelativeLayout>
